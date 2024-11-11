@@ -326,20 +326,20 @@ body {
   border-radius: 20px;
   justify-content: space-between;
 }
-.background .content-footer__title {
+.background .content-footer .content-footer__title {
   color: #ffffff;
   font-size: 30px;
   font-family: "Gilroy-Bold", sans-serif;
   padding-right: 50px;
 }
-.background .content-footer__block {
+.background .content-footer .content-footer__block {
   background-color: #ffffff;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
   padding: 15px;
 }
-.background .content-footer__block__email {
+.background .content-footer .content-footer__block .block__email {
   font-family: "Gilroy-Medium", sans-serif;
   background-color: #ffffff;
   border-radius: 10px;
@@ -352,7 +352,7 @@ body {
   padding-left: 25px;
   font-size: 20px;
 }
-.background .content-footer__block__inscription {
+.background .content-footer .content-footer__block .block__inscription {
   display: flex;
   align-items: center;
   justify-content: center;
