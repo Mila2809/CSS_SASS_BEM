@@ -1,0 +1,102 @@
+@use "variable.scss";
+
+* {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-family: "Gilroy-Heavy", sans-serif;
+    font-family: "Gilroy-Light", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
+}
+.background {
+    padding-top: 70px;
+    .content-footer {
+        background-color: variable.$secondary-color;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 20px;
+        justify-content: space-between;
+        &__title {
+            color: variable.$primary-color;
+            font-size: 30px;
+            font-family: "Gilroy-Bold", sans-serif;
+            padding-right: 50px;
+        }
+        &__block {
+            background-color: variable.$primary-color;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+            &__email {
+                font-family: "Gilroy-Medium", sans-serif;
+                background-color: variable.$primary-color;
+                border-radius: 10px;
+                color: #99a2a5;
+                border: 1px solid #99a2a5;
+                width: 600px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                padding-left: 25px;
+                font-size: 20px;
+            }
+            &__inscription {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: variable.$secondary-color;
+                border-radius: 10px;
+                color: variable.$primary-color;
+                margin-left: 15px;
+                width: 190px;
+                font-size: 20px;
+            }
+        }
+    }
+    .content-f {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 150px;
+        margin-right: 150px;
+        .content__navbar-footer {
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-weight: 600;
+            color: variable.$secondary-color;
+        }
+        .content__networks {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .ligne {
+        margin-left: 150px;
+        margin-right: 150px;
+        color: variable.$secondary-color;
+    }
+    .content-fin {
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #667479;
+        font-size: 18px;
+        font-weight: 400;
+        .navbar__logo2 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}

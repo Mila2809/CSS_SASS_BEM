@@ -1,0 +1,9 @@
+@mixin color-text($color) {
+    font-family: "Gilroy-Regular", sans-serif;
+    border-radius: 40px;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    color: $color;
+}

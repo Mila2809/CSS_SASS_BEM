@@ -1,0 +1,134 @@
+@use "variable.scss";
+@use "sass:color";
+@use "mixin";
+* {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-family: "Gilroy-Heavy", sans-serif;
+    font-family: "Gilroy-Light", sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Gilroy-Regular", sans-serif;
+    margin: 20px;
+}
+
+.background {
+    font-family: "Gilroy-Regular", sans-serif;
+    background-color: #fceed5;
+    .navbar {
+        &__home {
+            font-family: "Gilroy-Medium", sans-serif;
+        }
+        &__category {
+            font-family: "Gilroy-Medium", sans-serif;
+        }
+        &__about {
+            font-family: "Gilroy-Medium", sans-serif;
+        }
+        &__contact {
+            font-family: "Gilroy-Medium", sans-serif;
+        }
+        font-family: "Gilroy-Regular", sans-serif;
+        padding: 30px 150px 30px 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: variable.$secondary-color;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .content-header {
+        font-family: "Gilroy-Regular", sans-serif;
+        display: flex;
+        flex-direction: row;
+        .content-header__info {
+            font-family: "Gilroy-Regular", sans-serif;
+            padding-left: 150px;
+            color: #002a48;
+            position: relative;
+            width: 700px;
+            .info__title {
+                font-family: "Gilroy-Heavy", sans-serif;
+                padding-top: 50px;
+                font-size: 70px;
+            }
+            .info__subtitle {
+                font-family: "Gilroy-Bold", sans-serif;
+                padding: 20px 0px 20px 0px;
+                font-size: 50px;
+            }
+            .info__text {
+                font-family: "Gilroy-Medium", sans-serif;
+                padding: 20px 0px 40px 0px;
+                font-size: 15px;
+                padding-right: 100px;
+            }
+        }
+        .content-header__img-info {
+            width: 950px;
+        }
+    }
+}
+
+.button {
+    font-family: "Gilroy-Regular", sans-serif;
+    display: flex;
+    flex-direction: row;
+    &__search {
+        font-family: "Gilroy-Regular", sans-serif;
+        background-color: variable.$primary-color;
+        border-radius: 40px;
+        color: #99a2a5;
+        margin-right: 15px;
+        padding: 15px;
+        text-decoration: none;
+        border: 0px;
+        width: 350px;
+        height: 50px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        font-weight: 200;
+        .search__loupe {
+            margin-right: 10px;
+        }
+    }
+    &__blue {
+        font-family: "Gilroy-Regular", sans-serif;
+        background-color: variable.$secondary-color;
+        border-radius: 40px;
+        margin-left: 15px;
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        border: 0px;
+        @if color.channel(variable.$secondary-color, "lightness", $space: hsl) >
+            50%
+        {
+            color: variable.$secondary-color;
+        } @else {
+            color: variable.$primary-color;
+        }
+    }
+    &__intro {
+        @include mixin.color-text(variable.$secondary-color);
+        background-color: #fceed5;
+        padding: 15px;
+        border: 2px solid variable.$secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__blue2 {
+        @include mixin.color-text(variable.$primary-color);
+        background-color: variable.$secondary-color;
+        margin-left: 15px;
+        border: 0px;
+    }
+}
