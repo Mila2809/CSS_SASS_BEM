@@ -22,7 +22,6 @@ Ce projet est une **réplique d’un site web canin** développée avec **SASS**
 
 ---
 
-## 📷 Aperçu du rendu
+## Aperçu du rendu
 
-> *![image](https://github.com/user-attachments/assets/46956857-e6fc-47f7-9af4-b87517a0149c)
-*
+> ![image](https://github.com/user-attachments/assets/46956857-e6fc-47f7-9af4-b87517a0149c)
